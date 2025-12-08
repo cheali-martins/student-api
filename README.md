@@ -150,7 +150,7 @@ MongoDB connected to student_db
 "success": true,
 "message": "Student retrieved successfully",
 "data": {
-"\_id": "6548c3a2e4b0c123456789ab",
+"_id": "6548c3a2e4b0c123456789ab",
 "name": "Fredrick Evans",
 "age": 29,
 "department": "Enigeering",
@@ -179,7 +179,7 @@ MongoDB connected to student_db
 "success": true,
 "message": "Student updated successfully",
 "data": {
-"\_id": "6548c3a2e4b0c123456789ab",
+"_id": "6548c3a2e4b0c123456789ab",
 "name": "Fredrick Updated",
 "age": 30,
 "department": "Software Engineering",
@@ -200,7 +200,7 @@ MongoDB connected to student_db
 "success": true,
 "message": "Student deleted successfully",
 "data": {
-"\_id": "6548c3a2e4b0c123456789ab",
+"_id": "6548c3a2e4b0c123456789ab",
 "name": "Fredrick Evans",
 "age": 29,
 "department": "Engineering",
