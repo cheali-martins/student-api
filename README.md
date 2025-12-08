@@ -27,9 +27,9 @@ I installed these before running:
 
 1. **Install dependencies**
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 Installed:
 
@@ -42,10 +42,10 @@ Installed:
 
 1. **Created a `.env` file:**
 
-\`\`\`bash
+```bash
 MONGODB_URI=mongodb+srv://username:password@cluster-url/student_db
 PORT=5000
-\`\`\`
+```
 
 You can get your MongoDB URI from MongoDB Atlas under "Connect → Drivers".
 
@@ -55,16 +55,16 @@ You can get your MongoDB URI from MongoDB Atlas under "Connect → Drivers".
 
 ### Development Mode
 
-\`\`\`
+```
 npm run dev
-\`\`\`
+```
 
 The server will start and you'll see:
 
-\`\`\`
+```
 Server running at http://localhost:5000
 MongoDB connected to student_db
-\`\`\`
+```
 
 ---
 
@@ -76,17 +76,17 @@ MongoDB connected to student_db
 
 **Request Body:**
 
-\`\`\`json
+```json
 {
 "name": "Fredrick Evans",
 "age": 29,
 "department": "Enigeering"
 }
-\`\`\`
+```
 
 **Response (201 Created):**
 
-\`\`\`json
+```json
 {
 "success": true,
 "message": "Student created successfully",
@@ -96,11 +96,10 @@ MongoDB connected to student_db
 "age": 29,
 "department": "Enigeering",
 "createdAt": "2024-01-01T10:00:00.000Z",
-"updatedAt": "2024-01-01T10:00:00.000Z",
-"\_\_v": 0
+"updatedAt": "2024-01-01T10:00:00.000Z"
 }
 }
-\`\`\`
+```
 
 ### 2. Get All Students
 
@@ -113,7 +112,7 @@ MongoDB connected to student_db
 
 **Response (200 OK):**
 
-\`\`\`json
+```json
 {
 "success": true,
 "message": "Students retrieved successfully",
@@ -136,7 +135,7 @@ MongoDB connected to student_db
 }
 ]
 }
-\`\`\`
+```
 
 ### 3. Get Student by ID
 
@@ -146,7 +145,7 @@ MongoDB connected to student_db
 
 **Response (200 OK):**
 
-\`\`\`json
+```json
 {
 "success": true,
 "message": "Student retrieved successfully",
@@ -159,23 +158,23 @@ MongoDB connected to student_db
 "updatedAt": "2024-01-01T10:00:00.000Z"
 }
 }
-\`\`\`
+```
 
 ### 4. Update a Student
 
 **Endpoint:** `PUT /api/students/updateStudent/:id`
 
-\`\`\`json
+```json
 {
 "name": "Fredrick Updated",
 "age": 30,
 "department": "Software Engineering"
 }
-\`\`\`
+```
 
 **Response (200 OK):**
 
-\`\`\`json
+```json
 {
 "success": true,
 "message": "Student updated successfully",
@@ -188,7 +187,7 @@ MongoDB connected to student_db
 "updatedAt": "2024-01-01T12:00:00.000Z"
 }
 }
-\`\`\`
+```
 
 ### 5. Delete a Student
 
@@ -196,7 +195,7 @@ MongoDB connected to student_db
 
 **Response (200 OK):**
 
-\`\`\`json
+```json
 {
 "success": true,
 "message": "Student deleted successfully",
@@ -209,13 +208,13 @@ MongoDB connected to student_db
 "updatedAt": "2024-01-01T10:00:00.000Z"
 }
 }
-\`\`\`
+```
 
 ---
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 student-api/
 ├── server.js # Main server file - application entry point
 ├── package.json # Dependencies and scripts
@@ -234,7 +233,7 @@ student-api/
 │
 └── routes/
 └── studentRoutes.js # API route definitions
-\`\`\`
+```
 
 ---
 
@@ -246,40 +245,40 @@ The API includes comprehensive error handling for:
 
 **Missing Required Fields:**
 
-\`\`\`json
+```json
 {
 "success": false,
 "message": "Please provide name, age, and department"
 }
-\`\`\`
+```
 
 **Invalid ID:**
 
-\`\`\`json
+```json
 {
 "success": false,
 "message": "Invalid student ID format"
 }
-\`\`\`
+```
 
 ### 2. Student Not Found
 
-\`\`\`json
+```json
 {
 "success": false,
 "message": "Student not found"
 }
-\`\`\`
+```
 
 ### 3. Route Not Found
 
-\`\`\`json
+```json
 {
 "success": false,
 "message": "Route not found",
 "path": "/api/invalid-route"
 }
-\`\`\`
+```
 
 ---
 
