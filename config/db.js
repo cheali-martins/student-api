@@ -7,7 +7,6 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 // Get the MongoDB connection string from the .env file
-// Example: mongodb+srv://username:password@cluster0.mongodb.net
 const uri = process.env.MONGODB_URI;
 
 // Get the database name from .env, or use "student_db" as a fallback
