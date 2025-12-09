@@ -1,11 +1,7 @@
-// ============================================
-// Student Controller - Business Logic Functions
-// ============================================
-
 // Import the Student model using CommonJS
 const Student = require("../models/studentModel");
 
-/**
+/*
  * ============================================
  * CREATE STUDENT
  * Route: POST /api/students
@@ -72,7 +68,7 @@ const createStudent = async (req, res, next) => {
  */
 const getAllStudents = async (req, res, next) => {
   try {
-    // Optional query parameters for pagination
+    // query parameters for pagination
     
     // This tells MongoDB how many students to return in one request. Default: 10
     const limit = parseInt(req.query.limit) || 10;    
@@ -82,7 +78,6 @@ const getAllStudents = async (req, res, next) => {
 // Page 1 → skip 0
 // Page 2 → skip 10
 // Page 3 → skip 20
-
     const skip = parseInt(req.query.skip) || 0;
 
     // Fetch students from DB
