@@ -26,9 +26,6 @@ async function connectDB() {
   } catch (err) {
     // If something goes wrong, log the error message
     console.error('❌ MongoDB connection error:', err.message);
-
-    // Exit the application so we notice the error immediately
-    process.exit(1);
   }
 }
 
