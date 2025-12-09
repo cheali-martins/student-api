@@ -281,13 +281,3 @@ The API includes comprehensive error handling for:
 ```
 
 ---
-
-## 📝 License
-
-This project is open source and available under the ISC License.
-
----
-
-## 🤝 Support
-
-For issues or questions, please check the error messages returned by the API or review the code comments for detailed explanations.
